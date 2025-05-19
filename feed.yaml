@@ -1,0 +1,39 @@
+title: Dummy Podcast Title
+subtitle: Dummy Subtitle
+author: Dummy Author
+description: This is a dummy description for the podcast feed.
+image: /images/dummy-artwork.jpg
+language: en-us
+category: Dummy Category
+format: audio/mpeg
+item:
+  - title: Episode 1 Title
+    description: Description for episode 1.
+    published: Thu, 01 Jan 2023 00:00:00 GMT
+    file: /audio/episode1.mp3
+    duration: 00:00:30
+    length: 123456
+  - title: Episode 2 Title
+    description: Description for episode 2.
+    published: Thu, 08 Jan 2023 00:00:00 GMT
+    file: /audio/episode2.mp3
+    duration: 00:00:45
+    length: 234567
+  - title: Episode 3 Title
+    description: Description for episode 3.
+    published: Thu, 15 Jan 2023 00:00:00 GMT
+    file: /audio/episode3.mp3
+    duration: 00:01:00
+    length: 345678
+  - title: Episode 4 Title
+    description: Description for episode 4.
+    published: Thu, 22 Jan 2023 00:00:00 GMT
+    file: /audio/episode4.mp3
+    duration: 00:00:50
+    length: 456789
+  - title: Episode 5 Title
+    description: Description for episode 5.
+    published: Thu, 29 Jan 2023 00:00:00 GMT
+    file: /audio/episode5.mp3
+    duration: 00:00:40
+    length: 567890
