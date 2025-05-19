@@ -1,15 +1,25 @@
 FROM ubuntu:latest
 
+# Install Python and required tools
 RUN apt-get update && apt-get install -y \
     python3.10 \
     python3-pip \
-    git 
+    python3-venv \
+    git
 
+# Create and activate a virtual environment
+RUN python3 -m venv /venv
 
-RUN pip3 install PyYAML
+# Install PyYAML in the virtual environment
+RUN /venv/bin/pip install --upgrade pip && /venv/bin/pip install PyYAML
 
-COPY feed.yaml /usr/bin/feed.py
-
+# Copy your files
+COPY feed.py /app/feed.py
+COPY feed.yaml /app/feed.yaml
 COPY entrypoint.sh /entrypoint.sh
 
+# Make sure entrypoint script is executable
+RUN chmod +x /entrypoint.sh
+
+# Set entrypoint
 ENTRYPOINT ["/entrypoint.sh"]
