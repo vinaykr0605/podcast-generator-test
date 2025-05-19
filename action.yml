@@ -1,0 +1,19 @@
+name: "Podcast Generator"
+author: "Surge"
+description: "Generates a feed for a podcasr from YAML file"
+runs:
+    using: "docker"
+    image: "dockerfile"
+branding:
+    icon: "git-branch"
+    color: "red"
+inputs:
+    email:
+      description: The commiter's email address
+      required: true
+      default:  ${{ github.actor }}@localhost
+    name :
+        description: The commiter's name
+        required: true
+        default: ${{ github.actor }}  
+
