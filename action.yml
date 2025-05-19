@@ -3,7 +3,7 @@ author: "Surge"
 description: "Generates a feed for a podcasr from YAML file"
 runs:
     using: "docker"
-    image: "dockerfile"
+    image: "Dockerfile"
 branding:
     icon: "git-branch"
     color: "red"
