@@ -14,7 +14,6 @@ RUN python3 -m venv /venv
 RUN /venv/bin/pip install --upgrade pip && /venv/bin/pip install PyYAML
 
 # Copy your files
-COPY feed.py /app/feed.py
 COPY feed.yaml /app/feed.yaml
 COPY entrypoint.sh /entrypoint.sh
 
